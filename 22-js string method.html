@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>js string method</h1>
+    <h2>The slice() Method</h2>     
+
+    <p id="x"></p>
+    <script>
+        let text = "Apple, Banana, Kiwi";
+        let part = text.slice(0);
+        document.getElementById("x").innerHTML = part; 
+        </script>
+        <h1>sd</h1>
+        <p id="nv"></p>
+        <script>
+            let str="Apple,banan,dj";
+            // let par=str.substring(6,10);
+            // document.getElementById("nv").innerHTML=par;
+            let sr = "Apple, Banana, Kiwi";
+            let pat = sr.substr(2, 6);
+
+            document.getElementById("nv").innerHTML=pat;
+        </script>
+        <h1>replace string with new string</h1>
+        <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+        <button onclick="myFunction()">try it</button>
+        <p id="demo3">plz visit microsoft and microsoft</p>
+        <script>
+            function myFunction()
+            {
+                let text=document.getElementById("demo3").innerHTML;
+            document.getElementById("demo3").innerHTML=text.replace("microsoft","vaibhav")
+            }
+        </script>
+        <h1>replace all</h1>
+        <p id="vcs"></p>
+        <script>
+            let tost = "I love Cats. Cats are very easy to love. Cats are very popular."
+            tost=tost.replaceAll(/Cats/g,"vaibhav");
+            document.getElementById("vcs").innerHTML=tost;
+        </script>
+        <h1>uppercase to lowercase</h1>
+        <p>convert to uppercase</p>
+        <button onclick="myfunction1()">convert</button>
+        <p id="no">hello vaibhav</p>
+        
+        <p id="ino">HELLO VAIBHAV</p>
+        <script>
+            function myfunction1()
+                {
+                    let vost=document.getElementById("no").innerHTML;
+                    document.getElementById("no").innerHTML=vost.toUpperCase();
+                    document.getElementById("ino").innerHTML=vost.toLowerCase();
+                }
+            
+        </script>
+        <h1>joint two strings</h1>
+        <p id="deno"></p>
+        <script>
+            let to1="vaibhya";
+            let to2="sp";
+            let to3=to1.concat(" ",to2);
+            document.getElementById("deno").innerHTML=to3;
+        </script>
+        <h1>trim() method to define the lenght of string</h1>
+        <p id="vs"></p>
+        <script>
+            let tov1="      hello vaibhav       ";
+            let tov2=tov1.trim();
+            document.getElementById("vs").innerHTML="lenght text 1="+tov1.length+"<br>lenght text2="+tov2.length;
+        </script>
+        <h1>the Padstart()</h1>
+        <p id="start"></p>
+        <script>
+            let hh="9";
+            // hh = hh.padStart(4,"0");
+            // hh = hh.padStart(2,"vaibhav");
+            hh = hh.padEnd(4,"vaibahv");
+            document.getElementById("start").innerHTML=hh;
+        </script>
+        <h1>the charat() return the postion of letter</h1>
+        <p id="char"></p>
+        <script>
+            let most="vaibhav";
+            document.getElementById("char").innerHTML=most.charAt(4);
+        </script>
+</body>
+</html>

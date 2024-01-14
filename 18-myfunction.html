@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Functions</h1>
+    <p>Call a function which performs a calculation and returns the result:</p>
+    <p id="x"></p>
+    <script>
+        function myFunction(p1,p2)
+        {
+            return p1*p2;
+        }
+        let result=myFunction(10,20);
+        document.getElementById("x").innerHTML=result;
+
+    </script>
+    <h1>JavaScript function celcius to faraneith conversion</h1>
+    <p id="xc"></p>
+    <script>
+        function toCelcius(f)
+        {
+            return (5/9)*(f-32);
+        }
+        let value=toCelcius(7)
+        document.getElementById("xc").innerHTML=value;
+    </script>
+</body>
+</html>

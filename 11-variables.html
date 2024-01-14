@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Variables</h1>
+
+<p>In this example, x, y, and z are undeclared.</p>
+<p>They are automatically declared when first used.</p>
+
+<p id="demo"></p>
+<script>
+    x=7;
+    y=9;
+    z=x*10;
+    c=x+y+z;
+    document.getElementById("demo").innerHTML=c;
+</script>
+<h1>using variable let</h1>
+<p id="let"></p>
+<script>
+    let x=10;
+    let y=20;
+    let z=x+y;
+    document.getElementById("let").innerHTML=z;
+</script>
+<h1>using variable var</h1>
+<p id="var"></p>
+<script>
+    var a=30;
+    var b=20;
+    var c=a-b;
+    document.getElementById("var").innerHTML=c;
+</script>
+<h1>using variable const</h1>
+<p id="const"></p>
+<script>
+    const d=90;
+    const e=20;
+    const f=d*e;
+    document.getElementById("const").innerHTML=f;
+</script>
+<h1>add two price and dispaly total pricex</h1>
+<p id="total"></p>
+<script>
+    const price1=122;
+    const price2=10;
+    let total=price1+price2;
+    document.getElementById("total").innerHTML= "total price is:"+total;
+    // document.getElementById("total").innerHTML=price1 + <br> +price2;
+    // document.getElementById("total").innerHTML="total price is:"+total;
+</script>
+<h2>declare many variables in one statment</h2>
+<p id="b"></p>
+<script>
+    let carName="volvo",price,person="vs"
+    document.getElementById("b").innerHTML= price;
+</script>
+<p id="g"></p>
+<script>
+    let $ = "Hello World";
+// let $$$ = "8";
+// let $myMoney = 98;
+let _x = "8";
+let _myMoney=2;
+// document.getElementById("g").innerHTML=$$$+$myMoney;
+document.getElementById("g").innerHTML=_x+_myMoney;
+</script>
+<p></p>
+</body>
+</html>

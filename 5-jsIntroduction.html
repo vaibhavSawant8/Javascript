@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    what can Javascript do
+    
+    <p id="vaibhav">Javascript can change the content of html</p>
+    <button type="button" onclick='document.getElementById("vaibhav").style.fontSize="50px"'>click on me</button>
+    <button type="button" onclick='document.getElementById("vaibhav").style.display="none"'>click </button>
+    <p id="no" style="display: none;">vaibhav vijay sawant</p>
+    <button type="button" onclick='document.getElementById("vaibhav").innerHTML="hello javscript"'> click me </button>
+    
+    <button type="button" onclick='document.getElementById("no").style.display="block"'>name</button>
+    
+    <hr>
+    <h1>what can javscript do</h1>
+    <p>javscript can change html attribute values</p>
+    In this case JavaScript changes the value of the src (source) attribute of an image
+    <br>
+    <!-- <button type="button" onclick="document.getElementById('vaibhav').src='pic_bulbon.gif'">turn on </button> -->
+    <!-- <img id="vaibhav" src="pic_bulboff.gif" alt="" style="width:100px;"> -->
+    <!-- <button type="button" onclick="document.getElementById('vaibhav').src='pic_bulboff.gif'">turn off </button> -->
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>

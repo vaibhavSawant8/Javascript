@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>string search</h1> 
+   <p>the indexof() method</p>
+   <p id="nole"></p>
+   <script>
+    let text=" asdf hjk dskf dsii js";
+    // let index=text.indexOf("js");
+    let index=text.search("js");
+    // let index=text.lastIndexOf("dsii");
+    document.getElementById("nole").innerHTML=index;
+   </script>
+   <p id="hole"></p>
+   <script>
+    let text4 = "Hello world, welcome to the universe.";
+    document.getElementById("hole").innerHTML = text4.includes("world");
+    </script>
+    
+</body>
+</html>

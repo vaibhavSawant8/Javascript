@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>craete a button for time show</h1>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">this is time</button>
+    <p id="demo"></p>
+    <p>In the example above, the JavaScript code changes the content of the element with id="demo".
+
+        In the next example, the code changes the content of its own element (using this.innerHTML):</p>
+        <button onclick="this.innerHTML=Date()">the time is</button>
+        <h5>display date</h5>
+        <button onclick="displaydate()">the time is</button>
+        <script>
+            function displaydate()
+            {
+                document.getElementById("rdx").innerHTML=Date();
+            }
+        </script>
+        <p id="rdx"></p>
+</body>
+</html>
